@@ -233,15 +233,10 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0; }
-      @media screen and (max-width: 768px) {
-        .paginasTratamientos__item__listas {
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto; } }
-      @media screen and (max-width: 425px) {
-        .paginasTratamientos__item__listas {
-          width: 80%; } }
+      padding: 0;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto; }
   .paginasTratamientos .tratamiento1 {
     grid-area: tratamiento1; }
   .paginasTratamientos .tratamiento2 {
