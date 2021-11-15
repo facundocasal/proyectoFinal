@@ -41,6 +41,7 @@
         }
         &__listas{
             @include flexbox (column, center, center);
+            padding: 0;
         }
     }
     .tratamiento1{
