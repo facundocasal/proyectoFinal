@@ -236,10 +236,12 @@ footer {
       padding: 0; }
       @media screen and (max-width: 425px) {
         .paginasTratamientos__item__listas {
-          width: 85%; } }
+          width: 85%;
+          justify-self: center; } }
       @media screen and (max-width: 768px) {
         .paginasTratamientos__item__listas {
-          width: 90%; } }
+          width: 90%;
+          justify-self: center; } }
   .paginasTratamientos .tratamiento1 {
     grid-area: tratamiento1; }
   .paginasTratamientos .tratamiento2 {
