@@ -1,0 +1,45 @@
+.sectionPaginas{
+    @include flexbox(row, center ,center);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: map-get($colores , gris );
+    background-color: map-get($colores, gris-claro );
+    @include media-size (425px){
+        flex-direction: column;
+    }
+    @include media-size (768px){
+        flex-direction: column;
+    }
+    &__video{
+        width: map-get($medidas-porcentaje, mitad );
+        height: 30%;
+        border-radius: 4rem;
+        border: 1px solid map-get($colores, negro );
+        @include media-size (425px){
+            width: 250px;
+        }
+    }
+    &__parrafo{
+        margin-left: 1rem;
+        font-weight: 600;
+        font-size: nth ($medidas-font, 3);
+        font-style: italic;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        @include media-size (425px){
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: nth($medidas-font, 2 );
+            word-spacing: 0.1rem;
+            letter-spacing: 0.1rem;
+        }
+        @include media-size (768px){
+            margin-top: 1rem;
+            
+        }
+    }
+}

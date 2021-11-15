@@ -1,0 +1,87 @@
+form{
+    @extend %shadow-text;
+    width: map-get($medidas-porcentaje , mitad );
+    text-align: center;
+    color: map-get($colores, blanco );
+    @include media-size (425px){
+        width: 90%;
+    }
+    label{
+        font-weight: 600;
+        margin: 0 1rem;
+    }
+    .nombreEmail__imput{
+        width: 150px;
+        background-color: map-get($colores, gris-claro );
+        outline: none;
+        border: none;
+        border-bottom: map-get($colores, rosa) solid 1px;
+        margin-bottom: 1rem;
+        @include media-size (768px){
+            width: 60%;
+        @include media-size (425px){
+            width: 90%;
+        }
+        }
+        &:focus{
+            width: 210px;
+            transition: all 1s;
+            @include media-size (768px){
+                width: 70%;
+            }
+            @include media-size (425px){
+                width: 100%;
+                transition: all 1s;
+            }
+        }
+    }
+    textarea{
+        width: 80%;
+        resize: none;
+        margin-left: 1rem;
+    }
+    .recibirInformacion{
+        font-size: nth($medidas-font, 3 );
+        input{
+            margin-left: 1rem;
+        }
+        @include media-size (425px){
+            font-size: nth($medidas-font, 2 );
+        }
+    }
+
+    .formBoton{
+        @include media-size (425px){
+            width: 100%;
+            @include flexbox (row,center,center);
+        }
+        @include media-size (768px){
+            @include flexbox (row,center,center);   
+        }
+
+
+        &__item{
+            letter-spacing: 0.3rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: nth($medidas-font, 3 );
+            width: 40%;
+            border-radius: 3rem;
+            background-color: map-get($colores, negro );
+            color: map-get($colores, rosa );
+            border: none;
+            margin: 1rem;
+            @extend %shadow-box;
+            &:hover{
+                background-color: map-get($colores , rosa );
+                color: map-get($colores, negro );
+            }
+        }
+    }   
+    option{
+        text-transform: uppercase;
+        background-color: map-get($colores, negro );
+        color: map-get($colores, rosa-pastel );
+        font-weight: 600;
+    }
+}

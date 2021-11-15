@@ -1,0 +1,30 @@
+.sectionContacto{
+    font-family: $font-formularioContacto;
+    width: 85%;
+    color: map-get($colores, blanco );
+    margin: 1rem auto;
+    background-color: map-get($colores , gris-claro );
+    border-radius: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    @extend %shadow-box;
+    &__titulo{
+        font-family: $font-titulos;
+        text-align: center;
+        @extend %shadow-text;
+        font-size: nth($medidas-font, 7 ) ;
+        padding: 1rem;
+        animation-duration: 4s;
+        @include media-size (425px){
+            font-size: nth($medidas-font, 6 ) ;
+        }
+    }
+    &__formularioDireciones{
+        display: flex;
+        @include media-size (425px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

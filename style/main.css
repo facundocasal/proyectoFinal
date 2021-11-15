@@ -1,0 +1,512 @@
+.galeria__imagenes__item, .galeria__imagenes__manicuria, .sobreNosotros, .sectionMain__card__imagen, .paginasTratamientos__item, .sectionContacto, form .formBoton__item {
+  -webkit-box-shadow: 6px 3px 5px 0px #333333;
+  -moz-box-shadow: 6px 3px 5px 0px #333333;
+  box-shadow: 6px 3px 5px 0px #333333; }
+
+.sobreNosotros__titulo, .sobreNosotros__parrafo, .sectionMain__card__nombreTratamiento, .galeria__titulo, .sectionContacto__titulo, form, .informacion .direcciones__lista {
+  text-shadow: 2px 2px 2px #333333; }
+
+.galeria__imagenes__item, .galeria__imagenes__manicuria {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  font-size: large;
+  background-color: #ceabab; }
+  header nav {
+    margin-left: 3%; }
+  @media screen and (max-width: 425px) {
+    header .nav__item {
+      padding-left: 20px;
+      width: 95%; } }
+  header .nav__item:hover {
+    border-radius: 1rem;
+    background-color: #cc2366;
+    transition: background-color 2s; }
+    @media screen and (max-width: 425px) {
+      header .nav__item:hover {
+        transition: all 0s; } }
+
+footer {
+  background-color: #ceabab; }
+  footer div h4 {
+    font-family: "Playfair Display", serif; }
+
+.indexLogo {
+  width: 30%;
+  margin: 1rem 0;
+  animation-duration: 4s; }
+
+.sobreNosotros {
+  background-color: #cec2ab;
+  padding: 1rem;
+  border-radius: 3rem;
+  color: #f7f8f8; }
+  @media screen and (max-width: 425px) {
+    .sobreNosotros {
+      padding: 0.1rem;
+      width: 90%;
+      margin: auto; } }
+  .sobreNosotros__titulo {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: xxx-large;
+    margin-top: 1.5rem;
+    text-align: center; }
+    @media screen and (max-width: 425px) {
+      .sobreNosotros__titulo {
+        letter-spacing: 0.2rem;
+        font-size: x-large; } }
+  .sobreNosotros__parrafo {
+    word-spacing: 0.3rem;
+    font-size: medium;
+    padding: 1rem;
+    margin: 0 2rem;
+    letter-spacing: 2px;
+    font-style: italic; }
+    @media screen and (max-width: 425px) {
+      .sobreNosotros__parrafo {
+        word-spacing: 0.2rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.5rem;
+        letter-spacing: 1px;
+        margin: 0 0.8rem; } }
+
+.sectionMain {
+  display: flex;
+  margin: 2rem auto;
+  width: 75%; }
+  @media screen and (max-width: 425px) {
+    .sectionMain {
+      flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    .sectionMain__card {
+      height: 270px; } }
+  @media screen and (max-width: 425px) {
+    .sectionMain__card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 140px; } }
+  .sectionMain__card__imagen {
+    border-radius: 1rem; }
+    @media screen and (max-width: 768px) {
+      .sectionMain__card__imagen {
+        width: 200px;
+        height: 150px; } }
+    @media screen and (max-width: 425px) {
+      .sectionMain__card__imagen {
+        width: 150px;
+        height: 100px; } }
+  .sectionMain__card__nombreTratamiento {
+    color: #f7f8f8;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.1rem; }
+    @media screen and (max-width: 425px) {
+      .sectionMain__card__nombreTratamiento {
+        width: 50%; }
+        .sectionMain__card__nombreTratamiento h5 {
+          font-size: medium;
+          letter-spacing: 0; } }
+    @media screen and (max-width: 375px) {
+      .sectionMain__card__nombreTratamiento {
+        width: 80%; } }
+
+.tituloPaginas {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-weight: 600;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  width: 50%;
+  color: #707070;
+  font-size: xxx-large;
+  letter-spacing: 1.5rem; }
+  @media screen and (max-width: 425px) {
+    .tituloPaginas {
+      font-weight: 300;
+      margin: 1rem auto;
+      font-size: xx-large;
+      letter-spacing: 0.3rem;
+      width: 90%; } }
+  @media screen and (max-width: 375px) {
+    .tituloPaginas {
+      font-size: x-large;
+      letter-spacing: 0.1rem;
+      width: 80%; } }
+  @media screen and (max-width: 768px) {
+    .tituloPaginas {
+      font-size: xx-large;
+      width: 70%; } }
+
+.sectionPaginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color: #707070;
+  background-color: #cec2ab; }
+  @media screen and (max-width: 425px) {
+    .sectionPaginas {
+      flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    .sectionPaginas {
+      flex-direction: column; } }
+  .sectionPaginas__video {
+    width: 50%;
+    height: 30%;
+    border-radius: 4rem;
+    border: 1px solid #333333; }
+    @media screen and (max-width: 425px) {
+      .sectionPaginas__video {
+        width: 250px; } }
+  .sectionPaginas__parrafo {
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: nth x-small, small, medium, large, x-large, xx-large, xxx-large, 3;
+    font-style: italic;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
+    text-align: center; }
+    @media screen and (max-width: 425px) {
+      .sectionPaginas__parrafo {
+        margin-top: 1rem;
+        font-weight: 600;
+        font-size: small;
+        word-spacing: 0.1rem;
+        letter-spacing: 0.1rem; } }
+    @media screen and (max-width: 768px) {
+      .sectionPaginas__parrafo {
+        margin-top: 1rem; } }
+
+.paginasTratamientos {
+  margin: 5rem auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-row-gap: 8%;
+  grid-column-gap: 1%;
+  grid-template-areas: "tratamiento1 tratamiento2" "tratamiento3 tratamiento4";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  color: #707070;
+  justify-items: center; }
+  @media screen and (max-width: 425px) {
+    .paginasTratamientos {
+      grid-template-areas: "tratamiento1" "tratamiento2" "tratamiento3" "tratamiento4";
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 2%;
+      margin: 1rem 0; } }
+  .paginasTratamientos__item {
+    border: 2px solid #707070;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    justify-items: center;
+    line-height: 1.5rem;
+    width: 90%;
+    height: auto; }
+    @media screen and (max-width: 425px) {
+      .paginasTratamientos__item {
+        padding: 0.5rem;
+        line-height: 1rem;
+        width: 80%; } }
+    .paginasTratamientos__item__titulo {
+      text-transform: uppercase; }
+    .paginasTratamientos__item__listas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .paginasTratamientos .tratamiento1 {
+    grid-area: tratamiento1; }
+  .paginasTratamientos .tratamiento2 {
+    grid-area: tratamiento2; }
+  .paginasTratamientos .tratamiento3 {
+    grid-area: tratamiento3; }
+  .paginasTratamientos .tratamiento4 {
+    grid-area: tratamiento4; }
+
+.reglas {
+  line-height: 1.6rem;
+  width: 70%;
+  margin: 4rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #707070; }
+  .reglas__titulo {
+    text-transform: uppercase; }
+  @media screen and (max-width: 425px) {
+    .reglas {
+      text-align: center;
+      line-height: 1.2rem;
+      width: 90%;
+      margin: 2rem auto 0 auto; } }
+  @media screen and (max-width: 768px) {
+    .reglas {
+      text-align: center; } }
+  @media screen and (max-width: 425px) {
+    .reglas__lista {
+      width: 95%;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.sectionManicuria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  width: 90%;
+  color: #707070; }
+  @media screen and (max-width: 425px) {
+    .sectionManicuria {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      width: 100%; } }
+  .sectionManicuria__titulo {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    text-transform: uppercase; }
+    .sectionManicuria__titulo__lista {
+      font-weight: 600;
+      padding: 1.5rem;
+      width: 100%; }
+      @media screen and (max-width: 425px) {
+        .sectionManicuria__titulo__lista {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 1rem;
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto; } }
+
+.galeria__titulo {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #333333; }
+  @media screen and (max-width: 425px) {
+    .galeria__titulo {
+      font-size: xx-large;
+      margin-bottom: 0; } }
+
+.galeria__imagenes {
+  display: grid;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen3";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 10rem);
+  width: 70%;
+  margin: 2rem auto; }
+  @media screen and (max-width: 425px) {
+    .galeria__imagenes {
+      grid-template-areas: "imagen1 imagen2" "imagen4 imagen3" "imagen5 imagen5";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 100px);
+      grid-gap: 10px;
+      width: 80%;
+      margin: 1rem auto; } }
+  .galeria__imagenes .imagen1 {
+    grid-area: imagen1; }
+  .galeria__imagenes .imagen2 {
+    grid-area: imagen2; }
+  .galeria__imagenes .imagen3 {
+    grid-area: imagen5; }
+  .galeria__imagenes .imagen4 {
+    grid-area: imagen4; }
+  .galeria__imagenes .imagen5 {
+    grid-area: imagen3; }
+  @media screen and (max-width: 425px) {
+    .galeria__imagenes__item {
+      object-fit: cover; } }
+  @media screen and (max-width: 768px) {
+    .galeria__imagenes__item {
+      object-fit: cover; } }
+
+.sectionContacto {
+  font-family: "Birthstone", cursive;
+  width: 85%;
+  color: #f7f8f8;
+  margin: 1rem auto;
+  background-color: #cec2ab;
+  border-radius: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  line-height: 2rem; }
+  .sectionContacto__titulo {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: xxx-large;
+    padding: 1rem;
+    animation-duration: 4s; }
+    @media screen and (max-width: 425px) {
+      .sectionContacto__titulo {
+        font-size: xx-large; } }
+  .sectionContacto__formularioDireciones {
+    display: flex; }
+    @media screen and (max-width: 425px) {
+      .sectionContacto__formularioDireciones {
+        flex-direction: column;
+        align-items: center; } }
+
+form {
+  width: 50%;
+  text-align: center;
+  color: #f7f8f8; }
+  @media screen and (max-width: 425px) {
+    form {
+      width: 90%; } }
+  form label {
+    font-weight: 600;
+    margin: 0 1rem; }
+  form .nombreEmail__imput {
+    width: 150px;
+    background-color: #cec2ab;
+    outline: none;
+    border: none;
+    border-bottom: #e367d0 solid 1px;
+    margin-bottom: 1rem; }
+    @media screen and (max-width: 768px) {
+      form .nombreEmail__imput {
+        width: 60%; } }
+  @media screen and (max-width: 768px) and (max-width: 425px) {
+    form .nombreEmail__imput {
+      width: 90%; } }
+    form .nombreEmail__imput:focus {
+      width: 210px;
+      transition: all 1s; }
+      @media screen and (max-width: 768px) {
+        form .nombreEmail__imput:focus {
+          width: 70%; } }
+      @media screen and (max-width: 425px) {
+        form .nombreEmail__imput:focus {
+          width: 100%;
+          transition: all 1s; } }
+  form textarea {
+    width: 80%;
+    resize: none;
+    margin-left: 1rem; }
+  form .recibirInformacion {
+    font-size: medium; }
+    form .recibirInformacion input {
+      margin-left: 1rem; }
+    @media screen and (max-width: 425px) {
+      form .recibirInformacion {
+        font-size: small; } }
+  @media screen and (max-width: 425px) {
+    form .formBoton {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (max-width: 768px) {
+    form .formBoton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+  form .formBoton__item {
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: medium;
+    width: 40%;
+    border-radius: 3rem;
+    background-color: #333333;
+    color: #e367d0;
+    border: none;
+    margin: 1rem; }
+    form .formBoton__item:hover {
+      background-color: #e367d0;
+      color: #333333; }
+  form option {
+    text-transform: uppercase;
+    background-color: #333333;
+    color: #ceabab;
+    font-weight: 600; }
+
+.informacion {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  @media screen and (max-width: 425px) {
+    .informacion {
+      width: 95%; } }
+  .informacion .direcciones__lista {
+    font-size: x-large;
+    list-style: none; }
+    @media screen and (max-width: 425px) {
+      .informacion .direcciones__lista {
+        font-size: large;
+        padding: 0; } }
+    .informacion .direcciones__lista__item {
+      font-weight: 600; }
+  .informacion .direcciones__mapa {
+    width: 500px;
+    height: 150px;
+    align-self: center;
+    margin: 1rem 0; }
+    @media screen and (max-width: 425px) {
+      .informacion .direcciones__mapa {
+        width: 100%; } }
+    @media screen and (max-width: 768px) {
+      .informacion .direcciones__mapa {
+        width: 250px; } }
+    @media screen and (max-width: 425px) {
+      .informacion .direcciones__mapa__item {
+        width: 100%; } }
+    @media screen and (max-width: 768px) {
+      .informacion .direcciones__mapa__item {
+        width: 250px; } }
+  .informacion .buscanos__titulo {
+    font-size: x-large;
+    font-weight: 600; }
+  .informacion .buscanos__item {
+    font-size: xx-large; }
+  .informacion .aceptamos__titulo {
+    text-align: center;
+    font-size: large; }
+  .informacion .aceptamos__item {
+    font-size: xx-large;
+    color: #333333; }
+
+.instagram {
+  color: #f7f8f8;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-radius: 0.6rem; }

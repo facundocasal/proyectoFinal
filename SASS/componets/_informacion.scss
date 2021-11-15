@@ -1,0 +1,63 @@
+.informacion{
+    width: map-get($medidas-porcentaje , mitad );
+   @include flexbox (column, center,center);
+   text-align: center;
+   @include media-size (425px){
+       width: 95%;
+   }
+   .direcciones{
+        &__lista{
+            font-size: nth($medidas-font, 5);
+            list-style: none;
+            @extend %shadow-text;
+            @include media-size (425px){
+                font-size: nth($medidas-font, 4);
+                padding: 0;
+            }
+
+                &__item{
+                    font-weight: 600;
+            }
+        }
+        &__mapa{
+            width: 500px;
+            height: 150px;
+            align-self: center;
+            margin: 1rem 0;
+            @include media-size (425px){
+                width: map-get($medidas-porcentaje , total );
+            }
+            @include media-size (768px){
+                width: 250px;
+            }
+            &__item{
+                @include media-size (425px){
+                    width: map-get($medidas-porcentaje , total );
+                }
+                @include media-size (768px){
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .buscanos{
+        &__titulo{
+        font-size: nth($medidas-font, 5);
+        font-weight: 600;
+        }
+        &__item{
+            font-size: nth($medidas-font, 6 );
+        }
+    }
+    .aceptamos{
+        &__titulo{
+            text-align: center;
+            font-size: nth($medidas-font, 4 );
+        }
+        &__item{
+            font-size: nth($medidas-font, 6 );
+            color: map-get($colores , negro );
+        }
+    }
+}
+

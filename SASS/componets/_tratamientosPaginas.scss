@@ -1,0 +1,62 @@
+.paginasTratamientos{
+    margin: 5rem auto;
+    width: map-get($medidas-porcentaje, total );
+    height: auto;
+    @include grid ( 8%, 1%);
+    grid-template-areas: 
+    "tratamiento1 tratamiento2"
+    "tratamiento3 tratamiento4";
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: map-get($colores, gris );
+    justify-items: center;
+    @include media-size (425px){
+        grid-template-areas: 
+        "tratamiento1"
+        "tratamiento2"
+        "tratamiento3"
+        "tratamiento4";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap:  2%;
+        margin: 1rem 0;
+    }
+    &__item{
+        border: 2px solid map-get($colores, gris );
+        border-radius: 2rem;
+        padding: 1rem;
+        text-align: center;
+        justify-items: center;
+        line-height: 1.5rem;
+        width: 90%;
+        height: auto;
+        @extend %shadow-box;
+        @include media-size (425px){
+            padding: 0.5rem;
+            line-height: 1rem;
+            width: 80%;    
+        }
+        &__titulo{
+            text-transform: uppercase;
+        }
+        &__listas{
+            @include flexbox (column, center, center);
+        }
+    }
+    .tratamiento1{
+        grid-area: tratamiento1;
+    }
+    
+    .tratamiento2{
+        grid-area: tratamiento2;
+    }
+    
+    .tratamiento3{
+        grid-area: tratamiento3;
+    }
+    
+    .tratamiento4{
+        grid-area: tratamiento4;
+    }
+
+}

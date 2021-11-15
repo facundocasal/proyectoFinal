@@ -1,0 +1,21 @@
+header{
+    font-size: nth($medidas-font, 4);
+    background-color: map-get($colores, rosa-pastel );
+    nav{
+        margin-left: 3%;
+    }
+    .nav__item{
+        @include media-size (425px){
+            padding-left: 20px;
+            width: 95%;
+        }
+    &:hover{
+        border-radius: 1rem;
+        background-color:#cc2366;
+        transition: background-color 2s;
+        @include media-size(425px){
+            transition: all 0s;
+        }
+        }
+    }
+}

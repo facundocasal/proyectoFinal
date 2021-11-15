@@ -1,0 +1,103 @@
+.indexLogo{
+    width: 30%;
+    margin: 1rem 0;
+    animation-duration: 4s;
+}
+
+
+.sobreNosotros{
+    background-color: map-get($colores, gris-claro );
+    padding: 1rem;
+    border-radius: 3rem;
+    color: map-get($colores, blanco );
+    @extend %shadow-box;
+    @include media-size (425px){
+        padding: 0.1rem;
+        width: 90%;
+        margin: auto;
+    }
+    &__titulo{
+        font-family: $font-titulos;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: nth($medidas-font, 7 );
+        margin-top: 1.5rem;
+        text-align: center;
+        @extend %shadow-text;
+        @include media-size (425px){
+            letter-spacing: 0.2rem;
+            font-size: nth($medidas-font, 5);
+        }
+    }
+    &__parrafo{
+        word-spacing: 0.3rem;
+        font-size: nth($medidas-font, 3 );
+        padding: 1rem;
+        margin: 0 2rem;
+        @extend %shadow-text;
+        letter-spacing: 2px;
+        font-style: italic;
+        @include media-size (425px){
+            word-spacing: 0.2rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+            margin: 0 0.8rem;
+        }
+
+    }
+}
+
+.sectionMain{
+    display: flex;
+    margin: 2rem auto;
+    width: map-get($medidas-porcentaje, tresCuartos );
+    @include media-size (425px){
+        flex-direction: column;
+    }
+    &__card{
+        @include media-size (768px){
+            height: 270px;
+        }
+        @include media-size (425px){
+            @include flexbox (row, center,center);
+            height: 140px;
+        }
+
+        
+        &__imagen{
+            border-radius: 1rem;
+            @extend %shadow-box;
+            @include media-size (768px){
+                width: 200px;
+                height: 150px;
+            }
+            @include media-size (425px){
+                width: 150px;
+                height: 100px;
+            }
+            }
+        
+        &__nombreTratamiento{
+            color: map-get($colores , blanco );
+            font-family: $font-titulos;
+            letter-spacing: 0.1rem;
+            @extend %shadow-text;
+            @include media-size (425px){
+                width: map-get($medidas-porcentaje , mitad );
+                h5{
+                    font-size: nth($medidas-font , 3 );
+                    letter-spacing: 0;
+                }
+            }
+            @include media-size (375px){
+                width: 80%;
+            }
+            }
+
+        }
+    }
+
+    

@@ -1,0 +1,37 @@
+// COLORES
+
+$colores:(
+    negro: #333333,
+    gris: #707070,
+    gris-claro: #cec2ab,
+    rosa-pastel: #ceabab,
+    rosa: #e367d0,
+    blanco: #f7f8f8,
+);
+
+
+// MEDIDAS
+
+$medidas-porcentaje:(
+    total: 100%,
+    tresCuartos: 75%,
+    mitad: 50%,
+    cuarto: 25%,
+    nada: 0%,
+);
+
+
+// FONT 
+
+$medidas-font:
+    x-small,
+    small,
+    medium,
+    large,
+    x-large,
+    xx-large,
+    xxx-large;
+
+$font-titulos: 'Playfair Display', serif;
+
+$font-formularioContacto: 'Birthstone', cursive;
