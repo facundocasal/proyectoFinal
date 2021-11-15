@@ -42,14 +42,13 @@
         &__listas{
             @include flexbox (column, center, center);
             padding: 0;
+            margin-left: auto;
+            margin-right: auto;
             @include media-size (425px){
-                width: 85%;
-                justify-self: center;
+                width: 80%;
             }
             @include media-size (768px){
                 width: 90%;
-                justify-self: center;
-
             }
         }
     }
