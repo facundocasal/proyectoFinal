@@ -234,6 +234,12 @@ footer {
       justify-content: center;
       align-items: center;
       padding: 0; }
+      @media screen and (max-width: 425px) {
+        .paginasTratamientos__item__listas {
+          width: 85%; } }
+      @media screen and (max-width: 768px) {
+        .paginasTratamientos__item__listas {
+          width: 90%; } }
   .paginasTratamientos .tratamiento1 {
     grid-area: tratamiento1; }
   .paginasTratamientos .tratamiento2 {

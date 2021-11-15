@@ -42,6 +42,13 @@
         &__listas{
             @include flexbox (column, center, center);
             padding: 0;
+            @include media-size (425px){
+                width: 85%;
+            }
+            @include media-size (768px){
+                width: 90%;
+
+            }
         }
     }
     .tratamiento1{
