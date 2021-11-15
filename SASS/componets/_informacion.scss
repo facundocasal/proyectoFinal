@@ -9,12 +9,11 @@
         &__lista{
             font-size: nth($medidas-font, 5);
             list-style: none;
+            padding: 0;
             @extend %shadow-text;
             @include media-size (425px){
                 font-size: nth($medidas-font, 4);
-                padding: 0;
             }
-
                 &__item{
                     font-weight: 600;
             }

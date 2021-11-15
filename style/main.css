@@ -471,11 +471,11 @@ form {
       width: 95%; } }
   .informacion .direcciones__lista {
     font-size: x-large;
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
     @media screen and (max-width: 425px) {
       .informacion .direcciones__lista {
-        font-size: large;
-        padding: 0; } }
+        font-size: large; } }
     .informacion .direcciones__lista__item {
       font-weight: 600; }
   .informacion .direcciones__mapa {
