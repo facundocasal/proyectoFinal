@@ -1,0 +1,21 @@
+.error{
+    @include flexbox ( row, space-around,center);
+    &__texto{
+        @include flexbox ( column, space-around, center);
+        height: 30%;
+        width: map-get($medidas-porcentaje , mitad );
+        &__parrafo{
+            color: darkred;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    &__imagen{
+        width: map-get($medidas-porcentaje , mitad );
+        height: map-get($medidas-porcentaje , mitad );
+        &__item{
+            width: map-get($medidas-porcentaje , tresCuartos );
+            height: map-get($medidas-porcentaje , tresCuartos );;
+        }
+    }
+}
