@@ -14,7 +14,7 @@
     <meta property="og:autor" content="facundo casal">
     
     <meta name="description" content="FREYA es una forma de ver la vida y una forma de vivirla. La belleza exterior es un reflejo de la salud y la felicidad interior. cuando la belleza se realiza desde adentro, los resultados son reales, profundos y duraderos. Más que obsesionarse con modelos preestablecidos, vale la pena pensar en la belleza desde un lugar más auténtico."> 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 </head>
 
 <body class="bodyPaginas">
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark primary-color">
           <a class="navbar-brand" href="index.html" title="index"><img src="fotos/freya-spa-logo.svg" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,8 +65,8 @@
     <main>
         <div class="container container-fluid text-center">
             <div class="row">
-                <div class="col-12">
-                    <img class="indexLogo animate__fadeIn" src="fotos/freya-spa-logo.svg" alt="logo de Freya Spa">
+                <div class="col-6">
+                    <img data-aos="zoom-in" class="indexLogo animate__fadeIn" src="fotos/freya-spa-logo.svg" alt="logo de Freya Spa">
                 </div>
             </div>
         
@@ -92,7 +92,7 @@
 
         <section class="sectionMain">
 
-            <a class="text-decoration-none" href="tratamientosCorporales.html" title="acceso directo a tratamientos corporales">
+            <a data-aos="fade-right" class="text-decoration-none" href="tratamientosCorporales.html" title="acceso directo a tratamientos corporales">
                 <div class="card sectionMain__card text-center p-3 m-1 sectionMain__card" style="background-color:#cec2ab;">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="fotos/masajes.jpg" alt="imagen con link de Tratamientos corporales" 
@@ -104,7 +104,7 @@
                 </div>
             </a>
 
-            <a class="text-decoration-none" href="tratamientosFaciales.html" title="acceso directo a tratamientos faciales">
+            <a data-aos="fade-up" class="text-decoration-none" href="tratamientosFaciales.html" title="acceso directo a tratamientos faciales">
                 <div class="card sectionMain__card text-center p-3 m-1 sectionMain__card" style="background-color:#cec2ab;">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="fotos/tratamientosfaciales.jpg" alt="imagen con link de Tratamientos Faciales"
@@ -116,7 +116,7 @@
                 </div>
             </a>
 
-            <a class="text-decoration-none" href="manicuria.html" title="acceso directo a manicuria">
+            <a data-aos="fade-left" class="text-decoration-none" href="manicuria.html" title="acceso directo a manicuria">
                 <div class="card sectionMain__card text-center p-3 m-1 sectionMain__card" style="background-color:#cec2ab;">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                         <img src="fotos/manicuria.jpg" alt="imagen con link de manicuria" 
@@ -140,6 +140,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

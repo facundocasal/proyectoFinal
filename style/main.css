@@ -121,6 +121,9 @@ footer {
       .sectionMain__card__nombreTratamiento {
         width: 80%; } }
 
+.mainTratamientos {
+  margin-top: 6.2rem; }
+
 .tituloPaginas {
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -131,6 +134,10 @@ footer {
   color: #707070;
   font-size: xxx-large;
   letter-spacing: 1.5rem; }
+  @media screen and (max-width: 768px) {
+    .tituloPaginas {
+      font-size: xx-large;
+      width: 70%; } }
   @media screen and (max-width: 425px) {
     .tituloPaginas {
       font-weight: 300;
@@ -143,10 +150,6 @@ footer {
       font-size: x-large;
       letter-spacing: 0.1rem;
       width: 80%; } }
-  @media screen and (max-width: 768px) {
-    .tituloPaginas {
-      font-size: xx-large;
-      width: 70%; } }
 
 .sectionPaginas {
   display: flex;
@@ -360,7 +363,7 @@ footer {
   font-family: "Birthstone", cursive;
   width: 85%;
   color: #f7f8f8;
-  margin: 1rem auto;
+  margin: 5rem auto;
   background-color: #cec2ab;
   border-radius: 2rem;
   letter-spacing: 0.1rem;

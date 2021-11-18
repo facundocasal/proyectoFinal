@@ -1,3 +1,6 @@
+.mainTratamientos{
+    margin-top: 6.2rem;
+}
 .tituloPaginas{
     font-family: $font-titulos;
     text-align: center;
@@ -8,6 +11,10 @@
     color: map-get($colores, gris);
     font-size: nth($medidas-font, 7 );
     letter-spacing: 1.5rem;
+    @include media-size (768px){
+        font-size: nth($medidas-font, 6 );
+        width: 70%;
+    }
     @include media-size (425px){
         font-weight: 300;
         margin: 1rem auto;
@@ -15,14 +22,11 @@
         letter-spacing: 0.3rem;
         width: 90%;
     }
+
     @include media-size (375px){
         font-size: nth($medidas-font, 5 );
         letter-spacing: 0.1rem;
         width: 80%;
-    }
-    @include media-size (768px){
-        font-size: nth($medidas-font, 6 );
-        width: 70%;
     }
 
 }
