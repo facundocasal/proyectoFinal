@@ -15,6 +15,9 @@
   margin: 0;
   padding: 0; }
 
+.mainPaginas {
+  margin-top: 6.2rem; }
+
 header {
   font-size: large;
   background-color: #ceabab; }
@@ -120,9 +123,6 @@ footer {
     @media screen and (max-width: 375px) {
       .sectionMain__card__nombreTratamiento {
         width: 80%; } }
-
-.mainTratamientos {
-  margin-top: 6.2rem; }
 
 .tituloPaginas {
   font-family: "Playfair Display", serif;
