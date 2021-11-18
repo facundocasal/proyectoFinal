@@ -25,10 +25,10 @@
 
 
 
-
-  <link rel="stylesheet" href="style/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,79 +85,100 @@
       </p>
     </section>
 
-
-    <section class="paginasTratamientos">
-      <div class="paginasTratamientos__item tratamiento1">
-        <h3 class="paginasTratamientos__item__titulo">Máscara de luz LED</h3>
-        <ul class="paginasTratamientos__item__listas">
-          <li>Duracion: 50 min </li>
-          <li>Intensidad: Leve</li>
-        </ul>
-        <h4 class="paginasTratamientos__item__titulo">beneficios</h4>
-        <ol class="paginasTratamientos__item__listas">
-          <li>Devuelve el equilibrio de la piel</li>
-          <li>Aumenta la hidratación en profundidad</li>
-          <li>Rejuvenece las células y reduce los signos de la edad gracias a su efecto anti-envejecimiento.</li>
-        </ol>
+    <section>
+      <div class="cardTratamientos">
+          <div>
+              <img data-aos="zoom-in" class="cardTratamientos__imagen" src="fotos/fotosTF/luzLed.png" alt="imagen masaje de piedras">
+          </div>
+          <div class="cardTratamientos__informacion" data-aos="zoom-in" >
+              <h3 class="cardTratamientos__informacion__titulo">Máscara de luz LED</h3>
+              <ul class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Duracion: 50 min</li>
+                  <li class="informacion__lista__item">Intensidad: Leve</li>
+              </ul>
+              <h4 class="cardTratamientos__informacion__titulo">Beneficios</h4>
+              <ol class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Devuelve el equilibrio de la piel.</li>
+                  <li class="informacion__lista__item">Aumenta la hidratación en profundidad.</li>
+                  <li class="informacion__lista__item">Rejuvenece las células y reduce los signos de la edad gracias a su efecto anti-envejecimiento. </li>
+              </ol>
+          </div>
       </div>
-      <div class="paginasTratamientos__item tratamiento2">
-        <h3 class="paginasTratamientos__item__titulo">Limpieza de cutis profunda</h3>
-        <ul class="paginasTratamientos__item__listas">
-          <li>Duracion: 1hs</li>
-          <li>Intensidad: Moderada</li>
-        </ul>
-        <h4 class="paginasTratamientos__item__titulo">beneficios</h4>
-        <ol class="paginasTratamientos__item__listas">
-          <li>Elimina la apariencia del rostro cansado</li>
-          <li>Se atenúan las ojeras, líneas de expresión</li>
-          <li>Mejora la absorción de las cremas hidratantes que utilizamos</li>
-        </ol>
-      </div>
-      <div class="paginasTratamientos__item tratamiento3">
-        <h3 class="paginasTratamientos__item__titulo">Radio frecuencia</h3>
-        <ul class="paginasTratamientos__item__listas">
-          <li>Duracion: 40 Min</li>
-          <li>Intensidad: Moderada</li>
-        </ul>
-        <h4 class="paginasTratamientos__item__titulo">Beneficios</h4>
-        <ol class="paginasTratamientos__item__listas">
-          <li>Reducir la grasa eliminando la aparición de granos de acné.</li>
-          <li>Mejorar de la definición del óvalo facial.</li>
-          <li>Ayudar a eliminar las arrugas finas y las marcas de expresión.</li>
-          <li>Disminuir la flacidez del rostro y el cuello, consiguiendo una contracción de la piel, efecto tensor.</li>
-        </ol>
-      </div>
-      <div class="paginasTratamientos__item tratamiento4">
-        <h3 class="paginasTratamientos__item__titulo">Peeling</h3>
-        <ul class="paginasTratamientos__item__listas">
-          <li>Duracion: 20 Min</li>
-          <li>Intensidad: Intensa</li>
-        </ul>
-        <h4 class="paginasTratamientos__item__titulo" >beneficios</h4>
-        <ol class="paginasTratamientos__item__listas">
-          <li>Una piel rejuvenecida y bien hidratada con una secreción correcta de grasa</li>
-          <li>Estimula la regulación del colágen</li>
-          <li>Restauran la hidratación natural de la piel</li>
-          <li>Mejora la calidad y textura de la piel</li>
-        </ol>
-      </div>
-    </section>
 
 
 
-    <!-- GALERIA -->
-    <section class="galeria">
-      <h3 class="galeria__titulo">galeria</h3>
-      <div class="galeria__imagenes">
-        <img class="galeria__imagenes__item imagen1" src="fotos/fotosTF/imagen1.jpg" alt="imagen de tratamientosFaciales" loading="lazy">
-        <img class="galeria__imagenes__item imagen2" src="fotos/fotosTF/imagen2.jpg" alt="imagen de tratamientosFaciales" loading="lazy">
-        <img class="galeria__imagenes__item imagen3" src="fotos/fotosTF/imagen3.jpg" alt="imagen de tratamientosFaciales" loading="lazy">
-        <img class="galeria__imagenes__item imagen4" src="fotos/fotosTF/imagen4.jpg" alt="imagen de tratamientosFaciales" loading="lazy">
-        <img class="galeria__imagenes__item imagen5" src="fotos/fotosTF/imagen5.jpg" alt="imagen de tratamientosFaciales" loading="lazy">
+
+
+      <div class="cardTratamientos">
+          <div class="cardTratamientos__informacion" data-aos="zoom-in" >
+              <h3 class="cardTratamientos__informacion__titulo">Peeling</h3>
+              <ul class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Duracion: 20 Min</li>
+                  <li class="informacion__lista__item">Intensidad: Intensa</li>
+              </ul>
+              <h4 class="cardTratamientos__informacion__titulo">Beneficios</h4>
+              <ol class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Una piel rejuvenecida y bien hidratada con una secreción correcta de grasa.</li>
+                  <li class="informacion__lista__item">Estimula la regulación del colágen.</li>
+                  <li class="informacion__lista__item">Restauran la hidratación natural de la piel. </li>
+                  <li class="informacion__lista__item">Mejora la calidad y textura de la piel.</li>
+              </ol>
+          </div>
+          <div>
+              <img data-aos="zoom-in" class="cardTratamientos__imagen" src="fotos/fotosTF/Peeling.png" alt="imagen masaje de piedras">
+          </div>
       </div>
-    </section>
+
+
+
+      <div class="cardTratamientos">
+          <div>
+              <img data-aos="zoom-in" class="cardTratamientos__imagen" src="fotos/fotosTC/masajePiedras.png" alt="imagen masaje de piedras">
+          </div>
+          <div class="cardTratamientos__informacion" data-aos="zoom-in" >
+              <h3 class="cardTratamientos__informacion__titulo">Limpieza de cutis profunda</h3>
+              <ul class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Duracion: 1hs</li>
+                  <li class="informacion__lista__item">Intensidad: Moderada</li>
+              </ul>
+              <h4 class="cardTratamientos__informacion__titulo">Beneficios</h4>
+              <ol class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Elimina la apariencia del rostro cansado.</li>
+                  <li class="informacion__lista__item">Se atenúan las ojeras, líneas de expresión.</li>
+                  <li class="informacion__lista__item">Mejora la absorción de las cremas hidratantes que utilizamos.</li>
+              </ol>
+          </div>
+      </div>
+
+
+
+
+
+
+      <div class="cardTratamientos">
+          <div class="cardTratamientos__informacion" data-aos="zoom-in" >
+              <h3 class="cardTratamientos__informacion__titulo">Radio frecuencia</h3>
+              <ul class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Duracion: 40 Min</li>
+                  <li class="informacion__lista__item">Intensidad: Moderada</li>
+              </ul>
+              <h4 class="cardTratamientos__informacion__titulo">Beneficios</h4>
+              <ol class="cardTratamientos__informacion__lista">
+                  <li class="informacion__lista__item">Reducir la grasa eliminando la aparición de granos de acné.</li>
+                  <li class="informacion__lista__item">Mejorar de la definición del óvalo facial.</li>
+                  <li class="informacion__lista__item">Ayudar a eliminar las arrugas finas y las marcas de expresión.</li>
+                  <li class="informacion__lista__item">Disminuir la flacidez del rostro y el cuello, consiguiendo una contracción de la piel, efecto tensor.</li>
+              </ol>
+          </div>
+          <div>
+              <img data-aos="zoom-in" class="cardTratamientos__imagen" src="fotos/fotosTC/masajePiedras.png" alt="imagen masaje de piedras">
+          </div>
+      </div>
+  </section>
+
+
+
   </main>
-
   <footer class=" text-center">
     <div class="text-center p-1 fs-0 text-uppercase fw-bolder ">
       <h4 class="fw-bold">Freya spa</h4>
@@ -165,6 +186,10 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 
 </body>
 
