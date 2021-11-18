@@ -1,4 +1,17 @@
-
+.cardTratamientos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #8b6b61;
+    color: #fafafa;
+    margin: 1rem 0;
+    &__imagen{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 .paginasTratamientos{
     margin: 5rem auto;
