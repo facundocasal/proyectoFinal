@@ -7,9 +7,20 @@
     background-color: #8b6b61;
     color: #fafafa;
     margin: 1rem 0;
+    @include media-size (426px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
     &__imagen{
         width: 300px;
         height: 300px;
+    }
+    &__informacion{
+
+        &__titulo{
+            text-align: center;
+            text-transform: uppercase;
+        }
     }
 }
 

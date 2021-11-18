@@ -205,9 +205,16 @@ footer {
   background-color: #8b6b61;
   color: #fafafa;
   margin: 1rem 0; }
+  @media screen and (max-width: 426px) {
+    .cardTratamientos {
+      display: flex;
+      flex-direction: column-reverse; } }
   .cardTratamientos__imagen {
     width: 300px;
     height: 300px; }
+  .cardTratamientos__informacion__titulo {
+    text-align: center;
+    text-transform: uppercase; }
 
 .paginasTratamientos {
   margin: 5rem auto;
