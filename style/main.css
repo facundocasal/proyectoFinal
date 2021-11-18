@@ -209,11 +209,16 @@ footer {
       display: flex;
       flex-direction: column-reverse; } }
   .cardTratamientos__imagen {
-    width: 300px;
+    width: 100%;
     height: 300px; }
-  .cardTratamientos__informacion__titulo {
-    text-align: center;
-    text-transform: uppercase; }
+  .cardTratamientos__informacion {
+    width: 40%; }
+    @media screen and (max-width: 426px) {
+      .cardTratamientos__informacion {
+        width: 90%; } }
+    .cardTratamientos__informacion__titulo {
+      text-align: center;
+      text-transform: uppercase; }
 
 .paginasTratamientos {
   margin: 5rem auto;

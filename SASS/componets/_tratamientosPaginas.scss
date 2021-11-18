@@ -12,10 +12,14 @@
         flex-direction: column-reverse;
     }
     &__imagen{
-        width: 300px;
+        width: 100%;
         height: 300px;
     }
     &__informacion{
+        width: 40%;
+        @include media-size (426px){
+            width: 90%;
+        }
 
         &__titulo{
             text-align: center;
