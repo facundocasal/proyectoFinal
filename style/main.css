@@ -1,9 +1,9 @@
-.galeria__imagenes__item, .galeria__imagenes__manicuria, .sobreNosotros, .sectionMain__card__imagen, .sectionContacto, form .formBoton__item {
+.galeria__imagenes__item, .galeria__imagenes__manicuria, .sectionContacto, form .formBoton__item {
   -webkit-box-shadow: 6px 3px 5px 0px #333333;
   -moz-box-shadow: 6px 3px 5px 0px #333333;
   box-shadow: 6px 3px 5px 0px #333333; }
 
-.sobreNosotros__titulo, .sobreNosotros__parrafo, .sectionMain__card__nombreTratamiento, .galeria__titulo, .sectionContacto__titulo, form, .informacion .direcciones__lista {
+.galeria__titulo, .sectionContacto__titulo, form, .informacion .direcciones__lista {
   text-shadow: 2px 2px 2px #333333; }
 
 .galeria__imagenes__item, .galeria__imagenes__manicuria {
@@ -13,10 +13,11 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 .mainPaginas {
-  padding: 4.7rem 0 0 0; }
+  padding: 4.2rem 0 0 0; }
 
 header {
   font-size: large;
@@ -41,89 +42,42 @@ footer {
   footer div h4 {
     font-family: "Playfair Display", serif; }
 
-.indexLogo {
-  width: 30%;
-  margin: 1rem 0;
-  animation-duration: 4s; }
+.banner {
+  height: 100vh;
+  width: 100%;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  padding: 0;
+  margin-bottom: 0.5rem; }
+  .banner__row {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .banner__row__item {
+      width: 40%;
+      color: #fafafa; }
+      .banner__row__item img {
+        width: 80%; }
+      .banner__row__item p {
+        text-align: center;
+        color: #fafafa;
+        font-style: italic;
+        font-family: 'Acme', sans-serif;
+        font-weight: 600; }
 
-.sobreNosotros {
-  background-color: #8b6b61;
-  padding: 1rem;
-  border-radius: 3rem;
-  color: #fafafa; }
-  @media screen and (max-width: 425px) {
-    .sobreNosotros {
-      padding: 0.1rem;
-      width: 90%;
-      margin: auto; } }
-  .sobreNosotros__titulo {
-    font-family: "Playfair Display", serif;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: xxx-large;
-    margin-top: 1.5rem;
-    text-align: center; }
-    @media screen and (max-width: 425px) {
-      .sobreNosotros__titulo {
-        letter-spacing: 0.2rem;
-        font-size: x-large; } }
-  .sobreNosotros__parrafo {
-    word-spacing: 0.3rem;
-    font-size: medium;
-    padding: 1rem;
-    margin: 0 2rem;
-    letter-spacing: 2px;
-    font-style: italic; }
-    @media screen and (max-width: 425px) {
-      .sobreNosotros__parrafo {
-        word-spacing: 0.2rem;
-        font-size: 0.7rem;
-        font-weight: 700;
-        padding: 0.5rem;
-        letter-spacing: 1px;
-        margin: 0 0.8rem; } }
-
-.sectionMain {
-  display: flex;
-  margin: 2rem auto;
-  width: 75%; }
-  @media screen and (max-width: 425px) {
-    .sectionMain {
-      flex-direction: column; } }
-  @media screen and (max-width: 768px) {
-    .sectionMain__card {
-      height: 270px; } }
-  @media screen and (max-width: 425px) {
-    .sectionMain__card {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 140px; } }
-  .sectionMain__card__imagen {
-    border-radius: 1rem; }
-    @media screen and (max-width: 768px) {
-      .sectionMain__card__imagen {
-        width: 200px;
-        height: 150px; } }
-    @media screen and (max-width: 425px) {
-      .sectionMain__card__imagen {
-        width: 150px;
-        height: 100px; } }
-  .sectionMain__card__nombreTratamiento {
-    color: #fafafa;
-    font-family: "Playfair Display", serif;
-    letter-spacing: 0.1rem; }
-    @media screen and (max-width: 425px) {
-      .sectionMain__card__nombreTratamiento {
-        width: 50%; }
-        .sectionMain__card__nombreTratamiento h5 {
-          font-size: medium;
-          letter-spacing: 0; } }
-    @media screen and (max-width: 375px) {
-      .sectionMain__card__nombreTratamiento {
-        width: 80%; } }
+@keyframes banner {
+  0%, 20% {
+    background-image: url(../fotos/fotosBanner/banner1-min.png); }
+  25%, 45% {
+    background-image: url(../fotos/fotosBanner/banner2-min.jpg); }
+  50%, 70% {
+    background-image: url(../fotos/fotosBanner/banner3-min.jpg); }
+  75%, 100% {
+    background-image: url(../fotos/fotosBanner/banner4-min.jpg); } }
 
 .tituloPaginas {
   font-family: "Playfair Display", serif;
@@ -154,7 +108,8 @@ footer {
   padding: 1rem;
   color: #fafafa;
   font-style: italic;
-  font-family: 'Acme', sans-serif; }
+  font-family: 'Acme', sans-serif;
+  font-weight: 600; }
 
 .sectionPaginas {
   display: flex;
@@ -406,7 +361,7 @@ form {
     background-color: #8b6b61;
     outline: none;
     border: none;
-    border-bottom: #e367d0 solid 1px;
+    border-bottom: #fafafa solid 1px;
     margin-bottom: 1rem; }
     @media screen and (max-width: 768px) {
       form .nombreEmail__imput {

@@ -1,0 +1,14 @@
+@keyframes banner{
+    0%, 20%{
+        background-image: url(../fotos/fotosBanner/banner1-min.png);
+    }
+    25%, 45%{
+        background-image: url(../fotos/fotosBanner/banner2-min.jpg);
+    }
+    50%, 70%{
+        background-image: url(../fotos/fotosBanner/banner3-min.jpg);
+    }
+    75%, 100%{
+        background-image: url(../fotos/fotosBanner/banner4-min.jpg);
+    }
+}

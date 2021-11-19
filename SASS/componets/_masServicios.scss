@@ -1,6 +1,6 @@
 .masServicios{
     display: flex;
-    width: 100%;
+    width: map-get($medidas-porcentaje, total );
     justify-content: space-evenly;
     padding: 2rem;
 
@@ -21,13 +21,13 @@
             }
         }
         &__imagen{
-            width: 100%;
-            height: 100%;
+            width: map-get($medidas-porcentaje, total );
+            height: map-get($medidas-porcentaje, total );
             border-radius: 20%;
             opacity: 0.7;
         }
         &__nombre{
-            width: 100%;
+            width: map-get($medidas-porcentaje, total );;
             position: absolute;
             text-align: center;
             top:0;

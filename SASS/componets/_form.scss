@@ -15,7 +15,7 @@ form{
         background-color: map-get($colores, gris-claro );
         outline: none;
         border: none;
-        border-bottom: map-get($colores, rosa) solid 1px;
+        border-bottom: map-get($colores, blanco) solid 1px;
         margin-bottom: 1rem;
         @include media-size (768px){
             width: 60%;
