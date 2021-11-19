@@ -1,9 +1,9 @@
-.galeria__imagenes__item, .galeria__imagenes__manicuria, .sectionContacto, form .formBoton__item {
+.galeria__imagenes__item, .galeria__imagenes__manicuria, .sectionMain__card__imagen, .sectionContacto, form .formBoton__item {
   -webkit-box-shadow: 6px 3px 5px 0px #333333;
   -moz-box-shadow: 6px 3px 5px 0px #333333;
   box-shadow: 6px 3px 5px 0px #333333; }
 
-.galeria__titulo, .sectionContacto__titulo, form, .informacion .direcciones__lista {
+.sectionMain__card__nombreTratamiento, .galeria__titulo, .sectionContacto__titulo, form, .informacion .direcciones__lista {
   text-shadow: 2px 2px 2px #333333; }
 
 .galeria__imagenes__item, .galeria__imagenes__manicuria {
@@ -24,6 +24,9 @@ header {
   background-color: #ceabab; }
   header nav {
     margin-left: 3%; }
+    header nav a img {
+      width: 40px;
+      height: 40px; }
   @media screen and (max-width: 425px) {
     header .nav__item {
       padding-left: 20px;
@@ -68,6 +71,47 @@ footer {
         font-style: italic;
         font-family: 'Acme', sans-serif;
         font-weight: 600; }
+
+.sectionMain {
+  display: flex;
+  margin: 2rem auto;
+  width: 75%; }
+  @media screen and (max-width: 425px) {
+    .sectionMain {
+      flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    .sectionMain__card {
+      height: 270px; } }
+  @media screen and (max-width: 425px) {
+    .sectionMain__card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 140px; } }
+  .sectionMain__card__imagen {
+    border-radius: 1rem; }
+    @media screen and (max-width: 768px) {
+      .sectionMain__card__imagen {
+        width: 200px;
+        height: 150px; } }
+    @media screen and (max-width: 425px) {
+      .sectionMain__card__imagen {
+        width: 150px;
+        height: 100px; } }
+  .sectionMain__card__nombreTratamiento {
+    color: #fafafa;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.1rem; }
+    @media screen and (max-width: 425px) {
+      .sectionMain__card__nombreTratamiento {
+        width: 50%; }
+        .sectionMain__card__nombreTratamiento h5 {
+          font-size: medium;
+          letter-spacing: 0; } }
+    @media screen and (max-width: 375px) {
+      .sectionMain__card__nombreTratamiento {
+        width: 80%; } }
 
 @keyframes banner {
   0%, 20% {
