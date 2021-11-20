@@ -26,35 +26,3 @@
         }
     }
 }
-
-.sectionManicuria{
-    @include flexbox (row, center, center);
-    margin: 2rem auto;
-    width: 90%;
-    color: map-get($colores, gris );
-    @include media-size (425px){
-        @include flexbox (column, center, center);
-        padding: 1rem;
-        width: map-get($medidas-porcentaje, total);
-    }
-    &__titulo{
-        margin-top: 1rem;
-        text-align: center;
-        width: map-get($medidas-porcentaje , total);
-        font-size: nth($medidas-font, 6);
-        text-transform: uppercase;
-        &__lista{
-            font-weight: 600;
-            padding: 1.5rem;
-            width: map-get($medidas-porcentaje, total);
-            @include media-size (425px){
-                @include flexbox (column, center, center);
-                padding: 1rem;
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-
-            }
-        }
-    }
-}

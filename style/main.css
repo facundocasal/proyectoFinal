@@ -8,15 +8,15 @@
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 .mainPaginas {
   padding: 4.2rem 0 0 0; }
 
 header {
   font-size: large;
-  background-color: #ceabab; }
+  background-color: #ceabab;
+  width: 100%; }
   header nav {
     margin-left: 3%; }
     header nav a img {
@@ -47,6 +47,9 @@ footer {
   background-size: 100% 100%;
   padding: 0;
   margin-bottom: 0.5rem; }
+  @media screen and (max-width: 425px) {
+    .banner {
+      height: 350px; } }
   .banner__row {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
@@ -70,7 +73,8 @@ footer {
 .sectionMain {
   display: flex;
   margin: 2rem auto;
-  width: 75%; }
+  width: 75%;
+  overflow: hidden; }
   @media screen and (max-width: 425px) {
     .sectionMain {
       flex-direction: column; } }
@@ -107,6 +111,16 @@ footer {
     @media screen and (max-width: 375px) {
       .sectionMain__card__nombreTratamiento {
         width: 80%; } }
+
+.sobreNosotros__parrafo {
+  text-align: center;
+  color: #fafafa;
+  font-style: italic;
+  font-family: 'Acme', sans-serif;
+  font-weight: 600;
+  background-color: #8b6b61;
+  padding: 10px;
+  box-sizing: border-box; }
 
 @keyframes banner {
   0%, 20% {
@@ -213,7 +227,8 @@ footer {
     width: 40%; }
     @media screen and (max-width: 426px) {
       .cardTratamientos__informacion {
-        width: 90%; } }
+        width: 90%;
+        margin-top: 5px; } }
     .cardTratamientos__informacion__titulo {
       text-align: center;
       text-transform: uppercase; }
@@ -222,8 +237,9 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  padding: 2rem; }
-  @media screen and (max-width: 426px) {
+  padding: 2rem;
+  overflow: hidden; }
+  @media screen and (max-width: 430px) {
     .masServicios {
       flex-direction: column; } }
   .masServicios__card {
@@ -287,50 +303,15 @@ footer {
       margin-left: auto;
       margin-right: auto; } }
 
-.sectionManicuria {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem auto;
-  width: 90%;
-  color: #707070; }
-  @media screen and (max-width: 425px) {
-    .sectionManicuria {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      width: 100%; } }
-  .sectionManicuria__titulo {
-    margin-top: 1rem;
-    text-align: center;
-    width: 100%;
-    font-size: xx-large;
-    text-transform: uppercase; }
-    .sectionManicuria__titulo__lista {
-      font-weight: 600;
-      padding: 1.5rem;
-      width: 100%; }
-      @media screen and (max-width: 425px) {
-        .sectionManicuria__titulo__lista {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 1rem;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto; } }
-
 .galeria {
   background: #8b6b61;
   padding-top: 1rem;
   margin-bottom: 1rem; }
   .galeria__titulo {
     color: #fafafa;
-    text-align: center; }
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: xxx-large; }
   .galeria__imagenes {
     width: 90%;
     list-style: none;

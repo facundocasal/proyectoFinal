@@ -3,7 +3,9 @@
     width: map-get($medidas-porcentaje, total );
     justify-content: space-evenly;
     padding: 2rem;
-    @include media-size (426px){
+    overflow: hidden;
+
+    @include media-size (430px){
         flex-direction: column;
     }
 

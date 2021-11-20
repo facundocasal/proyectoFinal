@@ -6,6 +6,8 @@
     &__titulo{
         color: map-get($colores, blanco );
         text-align: center;
+        font-family: $font-titulos;
+        font-size: nth($medidas-font, 7 );
     }
 
     &__imagenes{

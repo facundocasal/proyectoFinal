@@ -1,6 +1,7 @@
 header{
     font-size: nth($medidas-font, 4);
     background-color: map-get($colores, rosa-pastel );
+    width: 100%;
     nav{
         margin-left: 3%;
         a {
