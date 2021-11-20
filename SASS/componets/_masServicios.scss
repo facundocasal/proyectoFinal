@@ -3,14 +3,23 @@
     width: map-get($medidas-porcentaje, total );
     justify-content: space-evenly;
     padding: 2rem;
+    @include media-size (426px){
+        flex-direction: column;
+    }
 
     &__card{
         width: 20%;
         position: relative;
+        @include media-size (426px){
+            width: map-get($medidas-porcentaje, total );
+    
+        }
+
         &:hover .masServicios__card__nombre__item{
             margin-top: 130px;
             transition: all 1s;
             background-color: blanchedalmond;
+            border-radius: 40%;
         }
 
         &__enlace{
@@ -24,7 +33,14 @@
             width: map-get($medidas-porcentaje, total );
             height: map-get($medidas-porcentaje, total );
             border-radius: 20%;
-            opacity: 0.7;
+            opacity: 0.6;
+            @include media-size (426px){
+                height: 150px;
+                margin: 1.5rem auto;
+
+        
+            }
+
         }
         &__nombre{
             width: map-get($medidas-porcentaje, total );;
