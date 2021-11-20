@@ -1,0 +1,56 @@
+.modalManicuria{
+    display: none;
+
+
+    &:target{
+        display: block;
+        position: fixed;
+        background: rgba(0,0,0, 0.8);
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: 1040;
+        
+        .modalManicuria__imagen{
+            margin: 2rem 0;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: map-get($colores, blanco );
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 40px;
+            }
+            a:nth-child(2){
+                margin: 0;
+                height: 100%;
+                flex-shrink: 2;
+            }
+            img{
+                width: 500px;
+                height: 100%;
+                max-width: 100%;
+                border: 7px solid map-get($colores, blanco );
+                box-sizing: border-box;
+            }
+        }
+
+        .cerrar{
+            display: block;
+            color: map-get($colores, blanco );
+            height: 25px;
+            width: 25px;
+            margin: 10px  auto;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 50%;
+            line-height: 25px;
+
+        }
+    }
+}

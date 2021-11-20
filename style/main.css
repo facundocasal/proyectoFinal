@@ -1,15 +1,10 @@
-.galeria__imagenes__item, .galeria__imagenes__manicuria, .sectionMain__card__imagen, .sectionContacto, form .formBoton__item {
+.sectionMain__card__imagen, .sectionContacto, form .formBoton__item {
   -webkit-box-shadow: 6px 3px 5px 0px #333333;
   -moz-box-shadow: 6px 3px 5px 0px #333333;
   box-shadow: 6px 3px 5px 0px #333333; }
 
-.sectionMain__card__nombreTratamiento, .galeria__titulo, .sectionContacto__titulo, form, .informacion .direcciones__lista {
+.sectionMain__card__nombreTratamiento, .sectionContacto__titulo, form, .informacion .direcciones__lista {
   text-shadow: 2px 2px 2px #333333; }
-
-.galeria__imagenes__item, .galeria__imagenes__manicuria {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px; }
 
 * {
   margin: 0;
@@ -318,51 +313,73 @@ footer {
           margin-left: auto;
           margin-right: auto; } }
 
-.galeria__titulo {
-  width: 100%;
-  text-align: center;
-  font-size: 4rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: #333333; }
-  @media screen and (max-width: 425px) {
-    .galeria__titulo {
-      font-size: xx-large;
-      margin-bottom: 0; } }
+.galeria {
+  background: #8b6b61;
+  padding-top: 1rem;
+  margin-bottom: 1rem; }
+  .galeria__titulo {
+    color: #fafafa;
+    text-align: center; }
+  .galeria__imagenes {
+    width: 90%;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    object-fit: contain; }
+    .galeria__imagenes li {
+      margin: 5px; }
+    .galeria__imagenes__item {
+      width: 150px;
+      height: 100px; }
 
-.galeria__imagenes {
-  display: grid;
-  grid-row-gap: 15px;
-  grid-column-gap: 15px;
-  grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen3";
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 10rem);
-  width: 70%;
-  margin: 2rem auto; }
-  @media screen and (max-width: 425px) {
-    .galeria__imagenes {
-      grid-template-areas: "imagen1 imagen2" "imagen4 imagen3" "imagen5 imagen5";
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 100px);
-      grid-gap: 10px;
-      width: 80%;
-      margin: 1rem auto; } }
-  .galeria__imagenes .imagen1 {
-    grid-area: imagen1; }
-  .galeria__imagenes .imagen2 {
-    grid-area: imagen2; }
-  .galeria__imagenes .imagen3 {
-    grid-area: imagen5; }
-  .galeria__imagenes .imagen4 {
-    grid-area: imagen4; }
-  .galeria__imagenes .imagen5 {
-    grid-area: imagen3; }
-  @media screen and (max-width: 425px) {
-    .galeria__imagenes__item {
-      object-fit: cover; } }
-  @media screen and (max-width: 768px) {
-    .galeria__imagenes__item {
-      object-fit: cover; } }
+.modalManicuria {
+  display: none; }
+  .modalManicuria:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1040; }
+    .modalManicuria:target .modalManicuria__imagen {
+      margin: 2rem 0;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .modalManicuria:target .modalManicuria__imagen a {
+        color: #fafafa;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 40px; }
+      .modalManicuria:target .modalManicuria__imagen a:nth-child(2) {
+        margin: 0;
+        height: 100%;
+        flex-shrink: 2; }
+      .modalManicuria:target .modalManicuria__imagen img {
+        width: 500px;
+        height: 100%;
+        max-width: 100%;
+        border: 7px solid #fafafa;
+        box-sizing: border-box; }
+    .modalManicuria:target .cerrar {
+      display: block;
+      color: #fafafa;
+      height: 25px;
+      width: 25px;
+      margin: 10px  auto;
+      font-size: 25px;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 50%;
+      line-height: 25px; }
 
 .sectionContacto {
   font-family: "Birthstone", cursive;
