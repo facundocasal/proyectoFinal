@@ -1,14 +1,16 @@
-.sectionMain__card__imagen, .sectionContacto, form .formBoton__item {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.sectionMain__card__imagen, .sectionContacto {
   -webkit-box-shadow: 6px 3px 5px 0px #333333;
   -moz-box-shadow: 6px 3px 5px 0px #333333;
   box-shadow: 6px 3px 5px 0px #333333; }
 
-.sectionMain__card__nombreTratamiento, .sectionContacto__titulo, form, .informacion .direcciones__lista {
+.sectionMain__card__nombreTratamiento, .sectionContacto__titulo, .informacion .direcciones__lista {
   text-shadow: 2px 2px 2px #333333; }
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
 
 .mainPaginas {
   padding: 4.2rem 0 0 0; }
@@ -39,36 +41,6 @@ footer {
   color: #fafafa; }
   footer div h4 {
     font-family: "Playfair Display", serif; }
-
-.banner {
-  height: 100vh;
-  width: 100%;
-  animation: banner 10s infinite linear alternate;
-  background-size: 100% 100%;
-  padding: 0;
-  margin-bottom: 0.5rem; }
-  @media screen and (max-width: 425px) {
-    .banner {
-      height: 350px; } }
-  .banner__row {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .banner__row__item {
-      width: 40%;
-      color: #fafafa; }
-      .banner__row__item img {
-        width: 80%; }
-      .banner__row__item p {
-        text-align: center;
-        color: #fafafa;
-        font-style: italic;
-        font-family: 'Acme', sans-serif;
-        font-weight: 600; }
 
 .sectionMain {
   display: flex;
@@ -121,6 +93,36 @@ footer {
   background-color: #8b6b61;
   padding: 10px;
   box-sizing: border-box; }
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  padding: 0;
+  margin-bottom: 0.5rem; }
+  @media screen and (max-width: 425px) {
+    .banner {
+      height: 550px; } }
+  .banner__row {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .banner__row__item {
+      width: 40%;
+      color: #fafafa; }
+      .banner__row__item img {
+        width: 80%; }
+      .banner__row__item p {
+        text-align: center;
+        color: #fafafa;
+        font-style: italic;
+        font-family: 'Acme', sans-serif;
+        font-weight: 600; }
 
 @keyframes banner {
   0%, 20% {
@@ -384,6 +386,7 @@ footer {
   text-transform: uppercase;
   line-height: 2rem; }
   .sectionContacto__titulo {
+    margin-bottom: 0;
     font-family: "Playfair Display", serif;
     text-align: center;
     font-size: xxx-large;
@@ -401,80 +404,16 @@ footer {
 
 form {
   width: 50%;
-  text-align: center;
-  color: #fafafa; }
-  @media screen and (max-width: 425px) {
-    form {
-      width: 90%; } }
-  form label {
-    font-weight: 600;
-    margin: 0 1rem; }
-  form .nombreEmail__imput {
-    width: 150px;
-    background-color: #8b6b61;
-    outline: none;
-    border: none;
-    border-bottom: #fafafa solid 1px;
-    margin-bottom: 1rem; }
-    @media screen and (max-width: 768px) {
-      form .nombreEmail__imput {
-        width: 60%; } }
-  @media screen and (max-width: 768px) and (max-width: 425px) {
-    form .nombreEmail__imput {
-      width: 90%; } }
-    form .nombreEmail__imput:focus {
-      width: 210px;
-      transition: all 1s; }
-      @media screen and (max-width: 768px) {
-        form .nombreEmail__imput:focus {
-          width: 70%; } }
-      @media screen and (max-width: 425px) {
-        form .nombreEmail__imput:focus {
-          width: 100%;
-          transition: all 1s; } }
-  form textarea {
-    width: 80%;
-    resize: none;
-    margin-left: 1rem; }
-  form .recibirInformacion {
-    font-size: medium; }
-    form .recibirInformacion input {
-      margin-left: 1rem; }
-    @media screen and (max-width: 425px) {
-      form .recibirInformacion {
-        font-size: small; } }
-  @media screen and (max-width: 425px) {
-    form .formBoton {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; } }
-  @media screen and (max-width: 768px) {
-    form .formBoton {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; } }
-  form .formBoton__item {
-    letter-spacing: 0.3rem;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: medium;
-    width: 40%;
-    border-radius: 3rem;
-    background-color: #333333;
-    color: #e367d0;
-    border: none;
-    margin: 1rem; }
-    form .formBoton__item:hover {
-      background-color: #e367d0;
-      color: #333333; }
-  form option {
-    text-transform: uppercase;
-    background-color: #333333;
-    color: #ceabab;
-    font-weight: 600; }
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; }
+  form input, form textarea, form select {
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 15px; }
 
 .informacion {
   width: 50%;

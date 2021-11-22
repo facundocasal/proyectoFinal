@@ -71,7 +71,30 @@
   <section class="sectionContacto">
     <h2 class="animate__fadeIn sectionContacto__titulo">contacto</h2>
     <div class="sectionContacto__formularioDireciones">
-      <form action="guardar.php" method="post">
+      <form action="">
+        <input type="text" placeholder="nombre">
+        <input type="email" placeholder="correo">
+        <input type="tel" placeholder="(Código de área) Número">
+        <select name="servicio" placeholder="servicios">
+          <option value=""> servicios</option>
+          <option value="manicuria"> Tratamientos Corporales</option>
+          <option value="masajes">Tratamientos Faciales</option>
+          <option value="spa"> Manicuria </option>
+        </select>
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="tu consulta"></textarea>
+        <label class="recibirInformacion" for="recibir informacion"> desea suscribirse para recibir novedades y
+          beneficios <input type="checkbox" name="recibir informacion" value="1">
+          <input type="checkbox" name="recibir informacion" value="1">
+        </label>
+
+        <div class="formBoton">
+          <input class="formBoton__item" type="reset">
+          <input class="formBoton__item" type="submit">
+        </div>
+      </form>
+
+
+      <!-- <form action="guardar.php" method="post">
         <div>
           <label for="nombre" class="nombreEmail"> nombre</label>
           <input class="nombreEmail__imput" type="text" value="">
@@ -101,7 +124,7 @@
           <input class="formBoton__item" type="reset">
           <input class="formBoton__item" type="submit">
         </div>
-      </form>
+      </form> -->
       <div class="informacion">
         <div class="direcciones">
           <ul class="direcciones__lista">

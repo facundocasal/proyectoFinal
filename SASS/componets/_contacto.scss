@@ -10,6 +10,7 @@
     line-height: 2rem;
     @extend %shadow-box;
     &__titulo{
+        margin-bottom: 0;
         font-family: $font-titulos;
         text-align: center;
         @extend %shadow-text;
