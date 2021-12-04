@@ -107,6 +107,9 @@ footer {
   background-repeat: no-repeat;
   padding: 0;
   margin-bottom: 0.5rem; }
+  @media screen and (max-width: 426px) {
+    .banner {
+      height: 450px; } }
   .banner__row {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
