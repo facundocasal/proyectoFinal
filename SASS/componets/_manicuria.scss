@@ -7,15 +7,13 @@
     &__titulo{
         text-transform: uppercase;
     }
-    @include media-size (425px){
+    @include media-size (768px){
         text-align: center;
+    }
+    @include media-size (425px){
         line-height: 1.2rem;
         width: 90%;
         margin: 2rem auto 0 auto;
-    }
-    @include media-size (768px){
-        text-align: center;
-
     }
     &__lista{
         @include media-size (425px){

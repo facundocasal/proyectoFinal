@@ -24,7 +24,7 @@
     &__parrafo{
         margin-left: 1rem;
         font-weight: 600;
-        font-size: nth ($medidas-font, 3);
+        font-size: nth($medidas-font, 3 );
         font-style: italic;
         word-spacing: 0.3rem;
         letter-spacing: 0.2rem;
@@ -37,8 +37,7 @@
             letter-spacing: 0.1rem;
         }
         @include media-size (768px){
-            margin-top: 1rem;
-            
+            margin-top: 1rem;           
         }
     }
 }

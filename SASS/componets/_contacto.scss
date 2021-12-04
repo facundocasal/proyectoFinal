@@ -1,5 +1,4 @@
 .sectionContacto{
-    font-family: $font-formularioContacto;
     width: map-get($medidas-porcentaje , mitad );
     color: map-get($colores, blanco );
     margin: 6rem auto;
@@ -14,10 +13,8 @@
     }
     &__titulo{
         margin-bottom: 0;
-        font-family: $font-titulos;
-        text-align: center;
         @extend %shadow-text;
-        font-size: nth($medidas-font, 7 ) ;
+        @extend %titulosDePaginas;
         padding: 1rem;
         animation-duration: 4s;
         @include media-size (425px){

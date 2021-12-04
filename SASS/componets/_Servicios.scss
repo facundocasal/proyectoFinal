@@ -1,16 +1,14 @@
 .Servicios{
-    display: flex;
+    @include flexbox (row, space-evenly, center);
     width: map-get($medidas-porcentaje, total );
-    justify-content: space-evenly;
     padding: 2rem;
     overflow: hidden;
-
     @include media-size (425px){
         flex-direction: column;
     }
-
     &__card{
         width: 20%;
+        border-radius: 20%;
         position: relative;
         @include media-size (768px){
             width: map-get($medidas-porcentaje, cuarto );;
@@ -19,7 +17,6 @@
             width: map-get($medidas-porcentaje, tresCuartos );
             margin: auto;  
         }
-
         &:hover .Servicios__card__nombre__item{
             margin-top: 50px;
             transition: all 1s;
@@ -29,7 +26,6 @@
                 margin-top: 30px;
             }
         }
-
         &__enlace{
             text-decoration: none;
             color: #333333;
@@ -46,15 +42,14 @@
                 height: 150px;
                 margin: 1.5rem auto;
             }
-
         }
         &__nombre{
             width: map-get($medidas-porcentaje, total );;
             position: absolute;
             text-align: center;
-            top:50%;
-            font-weight: 600;
+            top:map-get($medidas-porcentaje, mitad );
             &__item{
+                font-weight: 600;
                 @include media-size (1025px){
                 font-size: nth($medidas-font , 2 );
                 }

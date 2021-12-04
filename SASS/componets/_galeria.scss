@@ -2,33 +2,34 @@
     background: map-get($colores, marron );
     padding-top: 1rem;
     margin-bottom: 1rem;
-
     &__titulo{
         color: map-get($colores, blanco );
-        text-align: center;
-        font-family: $font-titulos;
-        font-size: nth($medidas-font, 7 );
+        @extend %titulosDePaginas;
     }
-
     &__imagenes{
         width: 80%;
         list-style: none;
         padding: 20px;
         box-sizing: border-box;
         margin: auto;
-        display: flex;
+        @include flexbox (row, space-evenly,center);
         flex-wrap: wrap;
-        justify-content: space-evenly;
         @include media-size (425px){
             width: map-get($medidas-porcentaje, total ); 
         }
         li{
             margin: 5px;
+            a{
+                &:hover{
+                    cursor: zoom-in;
+                }
+            }
         }
         &__item{
+            box-sizing: border-box;
+            border: ridge 3px map-get($colores, blanco );
             width: 150px;
             height: 100px;
-
         }
     }
 }

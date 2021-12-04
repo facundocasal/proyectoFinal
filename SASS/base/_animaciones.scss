@@ -1,0 +1,38 @@
+@keyframes banner{
+    0%, 20%{
+        background-image: url(../fotos/fotosBanner/banner1-min.png);
+    }
+    21%, 22%{
+        opacity: 0.9;
+    }
+    23%, 24%{
+        opacity: 1;
+    }
+    25%, 45%{
+        background-image: url(../fotos/fotosBanner/banner2-min.jpg);
+    }
+    46%, 47%{
+        opacity: 0.9;
+    }
+    48%, 49%{
+        opacity: 1;
+    }
+    50%, 70%{
+        background-image: url(../fotos/fotosBanner/banner3-min.jpg);
+    }
+    71%, 72%{
+        opacity: 0.9;
+    }
+    73%, 74%{
+        opacity: 1;
+    }
+    75%, 95%{
+        background-image: url(../fotos/fotosBanner/banner4-min.jpg);
+    }
+    96%, 97%{
+        opacity: 0.9;
+    }
+    98%, 100%{
+        opacity: 1;
+    }
+}

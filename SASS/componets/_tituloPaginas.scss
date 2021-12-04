@@ -1,11 +1,7 @@
 .tituloPaginas{
-    font-family: $font-titulos;   
-    text-align: center;
-    font-weight: 600;
+    @extend %titulosDePaginas;
     margin: 2rem auto;
-    text-transform: uppercase;
     color: map-get($colores, gris);
-    font-size: nth($medidas-font, 7 );
     letter-spacing: 1.5rem;
     @include media-size (768px){
         font-size: nth($medidas-font, 6 );
@@ -13,10 +9,8 @@
     @include media-size (425px){
         font-weight: 300;
         margin: 1rem auto;
-        font-size: nth($medidas-font, 6 );
         letter-spacing: 0.3rem;
     }
-
     @include media-size (375px){
         font-size: nth($medidas-font, 5 );
         letter-spacing: 0.1rem;

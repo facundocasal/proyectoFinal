@@ -8,14 +8,11 @@
     }
 }
 .sobreNosotros__parrafo{
-    text-align: center;
-    color: #fafafa;
-    font-style: italic;
-    font-family: 'Acme', sans-serif;
-    font-weight: 600;
+    @extend %parrafosTitulos;
+    font-size: nth($medidas-font, 6 );
+    color: map-get($colores, blanco );
     background-color: map-get($colores, marron );
     padding: 10px;
     box-sizing: border-box;
-
 }
     

@@ -1,8 +1,6 @@
 .cardTratamientos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    @include flexbox(row, space-around, center);
+    width: map-get($medidas-porcentaje, total );
     padding: 1rem;
     background-color: map-get($colores, marron );
     color: map-get($colores, blanco );
@@ -11,7 +9,7 @@
         flex-direction: column-reverse;
     }
     &__imagen{
-        width: 100%;
+        width: map-get($medidas-porcentaje, total );
         height: 300px;
     }
     &__informacion{

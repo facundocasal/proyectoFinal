@@ -1,24 +1,20 @@
 .modalManicuria{
     display: none;
-
-
     &:target{
         display: block;
         position: fixed;
         background: rgba(0,0,0, 0.8);
         top: 0%;
         left: 0%;
-        width: 100%;
-        height: 100%;
+        width: map-get($medidas-porcentaje, total );
+        height: map-get($medidas-porcentaje, total );
         z-index: 1040;
         
         .modalManicuria__imagen{
-            margin: 2rem 0;
-            width: 100%;
-            height: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 7rem 0 0 0;
+            width: map-get($medidas-porcentaje, total );
+            height: map-get($medidas-porcentaje, mitad );
+            @include flexbox (row, center, center);
             a{
                 color: map-get($colores, blanco );
                 text-decoration: none;
@@ -27,13 +23,13 @@
             }
             a:nth-child(2){
                 margin: 0;
-                height: 100%;
+                height: map-get($medidas-porcentaje, total );
                 flex-shrink: 2;
             }
             img{
                 width: 500px;
-                height: 100%;
-                max-width: 100%;
+                height: map-get($medidas-porcentaje, total );
+                max-width: map-get($medidas-porcentaje, total );
                 border: 7px solid map-get($colores, blanco );
                 box-sizing: border-box;
             }

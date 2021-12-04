@@ -1,15 +1,13 @@
 .banner{
     height: 100vh;
-    width: 100%;
-    animation: banner 10s infinite linear alternate;
-    background-size: 100% 100%;
+    width: map-get($medidas-porcentaje , total);
+    animation: banner 20s infinite linear alternate;
+    background-size: map-get($medidas-porcentaje , total) map-get($medidas-porcentaje , total) ;
+    background-repeat: no-repeat;
     padding: 0;
     margin-bottom: 0.5rem;
-    @include media-size (425px){
-        height: 450px;
-    }
     &__row{
-        height: 100%;
+        height: map-get($medidas-porcentaje , total );
         background: rgba(0,0,0, 0.6);
         margin: 0;
         @include flexbox (row, space-evenly ,center);
@@ -17,15 +15,12 @@
             width: 30%;
             color: map-get($colores, blanco );
             & img{
-                width: 100%;
+                width: map-get($medidas-porcentaje , total );
             }
             & p{
-                text-align: center;
-                color: #fafafa;
-                font-style: italic;
-                font-family: 'Acme', sans-serif;
-                font-weight: 600;
+                @extend %parrafosTitulos;
                 font-size: nth($medidas-font, 6 );
+                color: map-get (colores, blanco );
                 @include media-size (1025px){
                     font-size: nth($medidas-font, 4 );
                 }
@@ -37,19 +32,3 @@
     }
 }
 
-
-
-@keyframes banner{
-    0%, 20%{
-        background-image: url(../fotos/fotosBanner/banner1-min.png);
-    }
-    25%, 45%{
-        background-image: url(../fotos/fotosBanner/banner2-min.jpg);
-    }
-    50%, 70%{
-        background-image: url(../fotos/fotosBanner/banner3-min.jpg);
-    }
-    75%, 100%{
-        background-image: url(../fotos/fotosBanner/banner4-min.jpg);
-    }
-}

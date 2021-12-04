@@ -1,7 +1,6 @@
 header{
     font-size: nth($medidas-font, 4);
     background-color: map-get($colores, rosa-pastel );
-    width: 100%;
     nav{
         margin-left: 3%;
         a {
@@ -18,7 +17,7 @@ header{
         }
     &:hover{
         border-radius: 1rem;
-        background-color:#cc2366;
+        background-color: map-get($colores, rosa );
         transition: background-color 2s;
         @include media-size(768px){
             transition: all 0s;
