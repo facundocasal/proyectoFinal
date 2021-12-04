@@ -1,0 +1,9 @@
+.tituloSection{
+    text-align: center;
+    background-color: map-get($colores, marron );
+    padding: 1rem;
+    color: map-get($colores, blanco );
+    font-style: italic;
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+}

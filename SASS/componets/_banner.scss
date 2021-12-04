@@ -6,18 +6,18 @@
     padding: 0;
     margin-bottom: 0.5rem;
     @include media-size (425px){
-        height: 550px;
+        height: 380px;
     }
     &__row{
         height: 100%;
         background: rgba(0,0,0, 0.6);
         margin: 0;
-        @include flexbox (row, center ,center);
+        @include flexbox (row, space-evenly ,center);
         &__item{
-            width: 40%;
+            width: 30%;
             color: map-get($colores, blanco );
             & img{
-                width: 80%;
+                width: 100%;
             }
             & p{
                 text-align: center;
@@ -25,6 +25,13 @@
                 font-style: italic;
                 font-family: 'Acme', sans-serif;
                 font-weight: 600;
+                font-size: nth($medidas-font, 6 );
+                @include media-size (1025px){
+                    font-size: nth($medidas-font, 4 );
+                }
+                @include media-size (425px){
+                    font-size: nth($medidas-font, 2 );
+                }
             }
         }
     }

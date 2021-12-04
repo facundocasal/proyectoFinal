@@ -1,17 +1,18 @@
 .informacion{
-    width: map-get($medidas-porcentaje , mitad );
-   @include flexbox (column, center,center);
+    width: map-get($medidas-porcentaje , tresCuartos );
+   @include flexbox (row, space-between,center);
+   margin: auto;
    text-align: center;
    @include media-size (425px){
        width: 95%;
+       flex-direction: column;
    }
    .direcciones{
         &__lista{
             font-size: nth($medidas-font, 5);
             list-style: none;
             padding: 0;
-            @extend %shadow-text;
-            @include media-size (425px){
+            @include media-size (768px){
                 font-size: nth($medidas-font, 4);
             }
                 &__item{
@@ -19,9 +20,6 @@
             }
         }
         &__mapa{
-            width: 500px;
-            height: 150px;
-            align-self: center;
             margin: 1rem 0;
             @include media-size (425px){
                 width: map-get($medidas-porcentaje , total );

@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
-    background-color: map-get($colores, gris-claro );
+    background-color: map-get($colores, marron );
     color: map-get($colores, blanco );
     margin: 1rem 0;
     @include media-size (426px){

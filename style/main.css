@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.sectionMain__card__imagen, .sectionContacto {
+.sectionContacto {
   -webkit-box-shadow: 6px 3px 5px 0px #333333;
   -moz-box-shadow: 6px 3px 5px 0px #333333;
   box-shadow: 6px 3px 5px 0px #333333; }
 
-.sectionMain__card__nombreTratamiento, .sectionContacto__titulo, .informacion .direcciones__lista {
+.sectionContacto__titulo {
   text-shadow: 2px 2px 2px #333333; }
 
 * {
@@ -44,45 +44,15 @@ footer {
 
 .sectionMain {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   margin: 2rem auto;
-  width: 75%;
+  width: 100%;
   overflow: hidden; }
   @media screen and (max-width: 425px) {
     .sectionMain {
       flex-direction: column; } }
-  @media screen and (max-width: 768px) {
-    .sectionMain__card {
-      height: 270px; } }
-  @media screen and (max-width: 425px) {
-    .sectionMain__card {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 140px; } }
-  .sectionMain__card__imagen {
-    border-radius: 1rem; }
-    @media screen and (max-width: 768px) {
-      .sectionMain__card__imagen {
-        width: 200px;
-        height: 150px; } }
-    @media screen and (max-width: 425px) {
-      .sectionMain__card__imagen {
-        width: 150px;
-        height: 100px; } }
-  .sectionMain__card__nombreTratamiento {
-    color: #fafafa;
-    font-family: "Playfair Display", serif;
-    letter-spacing: 0.1rem; }
-    @media screen and (max-width: 425px) {
-      .sectionMain__card__nombreTratamiento {
-        width: 50%; }
-        .sectionMain__card__nombreTratamiento h5 {
-          font-size: medium;
-          letter-spacing: 0; } }
-    @media screen and (max-width: 375px) {
-      .sectionMain__card__nombreTratamiento {
-        width: 80%; } }
 
 .sobreNosotros__parrafo {
   text-align: center;
@@ -103,26 +73,33 @@ footer {
   margin-bottom: 0.5rem; }
   @media screen and (max-width: 425px) {
     .banner {
-      height: 550px; } }
+      height: 380px; } }
   .banner__row {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center; }
     .banner__row__item {
-      width: 40%;
+      width: 30%;
       color: #fafafa; }
       .banner__row__item img {
-        width: 80%; }
+        width: 100%; }
       .banner__row__item p {
         text-align: center;
         color: #fafafa;
         font-style: italic;
         font-family: 'Acme', sans-serif;
-        font-weight: 600; }
+        font-weight: 600;
+        font-size: xx-large; }
+        @media screen and (max-width: 1025px) {
+          .banner__row__item p {
+            font-size: large; } }
+        @media screen and (max-width: 425px) {
+          .banner__row__item p {
+            font-size: small; } }
 
 @keyframes banner {
   0%, 20% {
@@ -157,7 +134,7 @@ footer {
       font-size: x-large;
       letter-spacing: 0.1rem; } }
 
-.tituloTratamientos {
+.tituloSection {
   text-align: center;
   background-color: #8b6b61;
   padding: 1rem;
@@ -450,28 +427,27 @@ form {
           margin: 0.5rem 0 0 0; } }
 
 .informacion {
-  width: 50%;
+  width: 75%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  margin: auto;
   text-align: center; }
   @media screen and (max-width: 425px) {
     .informacion {
-      width: 95%; } }
+      width: 95%;
+      flex-direction: column; } }
   .informacion .direcciones__lista {
     font-size: x-large;
     list-style: none;
     padding: 0; }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 768px) {
       .informacion .direcciones__lista {
         font-size: large; } }
     .informacion .direcciones__lista__item {
       font-weight: 600; }
   .informacion .direcciones__mapa {
-    width: 500px;
-    height: 150px;
-    align-self: center;
     margin: 1rem 0; }
     @media screen and (max-width: 425px) {
       .informacion .direcciones__mapa {
