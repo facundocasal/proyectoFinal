@@ -24,7 +24,7 @@ header {
     header nav a img {
       width: 40px;
       height: 40px; }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 768px) {
     header .nav__item {
       padding-left: 20px;
       width: 95%; } }
@@ -32,7 +32,7 @@ header {
     border-radius: 1rem;
     background-color: #cc2366;
     transition: background-color 2s; }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 768px) {
       header .nav__item:hover {
         transition: all 0s; } }
 
@@ -73,7 +73,7 @@ footer {
   margin-bottom: 0.5rem; }
   @media screen and (max-width: 425px) {
     .banner {
-      height: 380px; } }
+      height: 450px; } }
   .banner__row {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
@@ -212,55 +212,55 @@ footer {
       text-align: center;
       text-transform: uppercase; }
 
-.masServicios {
+.Servicios {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   padding: 2rem;
   overflow: hidden; }
   @media screen and (max-width: 425px) {
-    .masServicios {
+    .Servicios {
       flex-direction: column; } }
-  .masServicios__card {
+  .Servicios__card {
     width: 20%;
     position: relative; }
     @media screen and (max-width: 768px) {
-      .masServicios__card {
+      .Servicios__card {
         width: 25%; } }
     @media screen and (max-width: 425px) {
-      .masServicios__card {
+      .Servicios__card {
         width: 75%;
         margin: auto; } }
-    .masServicios__card:hover .masServicios__card__nombre__item {
+    .Servicios__card:hover .Servicios__card__nombre__item {
       margin-top: 50px;
       transition: all 1s;
       background-color: blanchedalmond;
       border-radius: 60%; }
       @media screen and (max-width: 1025px) {
-        .masServicios__card:hover .masServicios__card__nombre__item {
+        .Servicios__card:hover .Servicios__card__nombre__item {
           margin-top: 30px; } }
-    .masServicios__card__enlace {
+    .Servicios__card__enlace {
       text-decoration: none;
       color: #333333; }
-      .masServicios__card__enlace:hover {
+      .Servicios__card__enlace:hover {
         color: #333333; }
-    .masServicios__card__imagen {
+    .Servicios__card__imagen {
       width: 100%;
       height: 100%;
       border-radius: 20%;
       opacity: 0.6; }
       @media screen and (max-width: 426px) {
-        .masServicios__card__imagen {
+        .Servicios__card__imagen {
           height: 150px;
           margin: 1.5rem auto; } }
-    .masServicios__card__nombre {
+    .Servicios__card__nombre {
       width: 100%;
       position: absolute;
       text-align: center;
       top: 50%;
       font-weight: 600; }
       @media screen and (max-width: 1025px) {
-        .masServicios__card__nombre__item {
+        .Servicios__card__nombre__item {
           font-size: small; } }
 
 .reglas {

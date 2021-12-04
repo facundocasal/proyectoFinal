@@ -1,4 +1,4 @@
-.masServicios{
+.Servicios{
     display: flex;
     width: map-get($medidas-porcentaje, total );
     justify-content: space-evenly;
@@ -20,7 +20,7 @@
             margin: auto;  
         }
 
-        &:hover .masServicios__card__nombre__item{
+        &:hover .Servicios__card__nombre__item{
             margin-top: 50px;
             transition: all 1s;
             background-color: blanchedalmond;

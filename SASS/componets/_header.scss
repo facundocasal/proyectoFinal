@@ -12,7 +12,7 @@ header{
         }
     }
     .nav__item{
-        @include media-size (425px){
+        @include media-size (768px){
             padding-left: 20px;
             width: 95%;
         }
@@ -20,7 +20,7 @@ header{
         border-radius: 1rem;
         background-color:#cc2366;
         transition: background-color 2s;
-        @include media-size(425px){
+        @include media-size(768px){
             transition: all 0s;
         }
         }
