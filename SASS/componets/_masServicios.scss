@@ -5,23 +5,29 @@
     padding: 2rem;
     overflow: hidden;
 
-    @include media-size (430px){
+    @include media-size (425px){
         flex-direction: column;
     }
 
     &__card{
         width: 20%;
         position: relative;
-        @include media-size (426px){
-            width: map-get($medidas-porcentaje, total );
-    
+        @include media-size (768px){
+            width: map-get($medidas-porcentaje, cuarto );;
+            }
+        @include media-size (425px){
+            width: map-get($medidas-porcentaje, tresCuartos );
+            margin: auto;  
         }
 
         &:hover .masServicios__card__nombre__item{
-            margin-top: 130px;
+            margin-top: 50px;
             transition: all 1s;
             background-color: blanchedalmond;
-            border-radius: 40%;
+            border-radius: 60%;
+            @include media-size (1025px){
+                margin-top: 30px;
+            }
         }
 
         &__enlace{
@@ -39,8 +45,6 @@
             @include media-size (426px){
                 height: 150px;
                 margin: 1.5rem auto;
-
-        
             }
 
         }
@@ -48,17 +52,13 @@
             width: map-get($medidas-porcentaje, total );;
             position: absolute;
             text-align: center;
-            top:0;
+            top:50%;
             font-weight: 600;
             &__item{
-                margin-top: 75px;
+                @include media-size (1025px){
+                font-size: nth($medidas-font , 2 );
+                }
             }
         }
-
-
-
-
     }
 }
-
-

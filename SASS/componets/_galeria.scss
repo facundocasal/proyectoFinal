@@ -11,15 +11,17 @@
     }
 
     &__imagenes{
-        width: 90%;
+        width: 80%;
         list-style: none;
         padding: 20px;
         box-sizing: border-box;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        object-fit: contain;
+        justify-content: space-evenly;
+        @include media-size (425px){
+            width: map-get($medidas-porcentaje, total ); 
+        }
         li{
             margin: 5px;
         }

@@ -68,22 +68,25 @@
   </header>
 
 
-  <section class="sectionContacto">
+  <section class="sectionContacto ">
     <h2 class="animate__fadeIn sectionContacto__titulo">contacto</h2>
-    <div class="sectionContacto__formularioDireciones">
-      <form action="">
-        <input type="text" placeholder="nombre">
-        <input type="email" placeholder="correo">
-        <input type="tel" placeholder="(Código de área) Número">
-        <select name="servicio" placeholder="servicios">
+    <div class="sectionContacto__formulario">
+      <form action="guardar.php" method="post">
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <div class="telefono__area">
+        <input  type="tel" placeholder="(Código de área)">
+        </div>
+        <input  type="tel" placeholder="Número">
+        <select name="servicio">
           <option value=""> servicios</option>
           <option value="manicuria"> Tratamientos Corporales</option>
           <option value="masajes">Tratamientos Faciales</option>
           <option value="spa"> Manicuria </option>
         </select>
-        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="tu consulta"></textarea>
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Consulta"></textarea>
         <label class="recibirInformacion" for="recibir informacion"> desea suscribirse para recibir novedades y
-          beneficios <input type="checkbox" name="recibir informacion" value="1">
+          beneficios 
           <input type="checkbox" name="recibir informacion" value="1">
         </label>
 
@@ -92,66 +95,6 @@
           <input class="formBoton__item" type="submit">
         </div>
       </form>
-
-
-      <!-- <form action="guardar.php" method="post">
-        <div>
-          <label for="nombre" class="nombreEmail"> nombre</label>
-          <input class="nombreEmail__imput" type="text" value="">
-          <label class="nombreEmail" for="email"> email</label>
-          <input class="nombreEmail__imput" type="email" value="">
-        </div>
-        <div>
-          <label for="servicio"> servicio</label>
-          <select name="servicio" placeholder="servicios">
-            <option value=""></option>
-            <option value="manicuria"> Tratamientos Corporales</option>
-            <option value="masajes">Tratamientos Faciales</option>
-            <option value="spa"> Manicuria </option>
-          </select>
-        </div>
-        <div>
-          <label for="consulta"> su consulta</label>
-          <textarea name="consulta" id="" cols="90" rows="6"></textarea>
-        </div>
-        <div>
-          <label class="recibirInformacion" for="recibir informacion"> desea suscribirse para recibir novedades y
-            beneficios
-            <input type="checkbox" name="recibir informacion" value="1">
-          </label>
-        </div>
-        <div class="formBoton">
-          <input class="formBoton__item" type="reset">
-          <input class="formBoton__item" type="submit">
-        </div>
-      </form> -->
-      <div class="informacion">
-        <div class="direcciones">
-          <ul class="direcciones__lista">
-            <li class="direcciones__lista__item">Direccion: calle falsa 123,CABA.<i class="fas fa-map-marker-alt"></i>
-            </li>
-            <li class="direcciones__lista__item">Telefono: 11-3060-8725 <i class="fas fa-phone"></i></li>
-          </ul>
-        </div>
-        <div class="direcciones__mapa">
-          <iframe class="direcciones__mapa__item"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13132.996377272306!2d-58.3803148!3d-34.623145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x26e645c6d5025cd8!2sMDR!5e0!3m2!1ses-419!2sar!4v1633317456191!5m2!1ses-419!2sar"
-            allowfullscreen=""></iframe>
-        </div>
-        <div class="buscanos">
-          <h4 class="buscanos__titulo">Buscanos en </h4>
-          <a href="https://www.facebook.com/" title="acceso directo a facebook" target="_blank"> <i id="facebook" class="fab fa-facebook-square buscanos__item"
-              style="color: #3b5998;"></i></a>
-          <a href="https://www.instagram.com/" title="acceso directo a instagram" target="_blank"><i class="fab fa-instagram instagram buscanos__item"></i></a>
-        </div>
-        <div class="aceptamos">
-          <h4 class="aceptamos__titulo fw-bold">Aceptamos todos los medios de pago</h4>
-          <i class="fab fa-cc-visa aceptamos__item"></i>
-          <i class="fab fa-cc-mastercard aceptamos__item"></i>
-          <i class="fab fa-cc-diners-club aceptamos__item"></i>
-          <i class="fab fa-cc-amex aceptamos__item "></i>
-        </div>
-      </div>
     </div>
   </section>
 

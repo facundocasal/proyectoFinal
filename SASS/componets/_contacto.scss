@@ -1,14 +1,17 @@
 .sectionContacto{
     font-family: $font-formularioContacto;
-    width: 85%;
+    width: map-get($medidas-porcentaje , mitad );
     color: map-get($colores, blanco );
-    margin: 5rem auto;
+    margin: 6rem auto;
     background-color: map-get($colores , gris-claro );
     border-radius: 2rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     line-height: 2rem;
     @extend %shadow-box;
+    @include media-size (768px){
+        width: map-get($medidas-porcentaje , tresCuartos );
+    }
     &__titulo{
         margin-bottom: 0;
         font-family: $font-titulos;
@@ -18,14 +21,10 @@
         padding: 1rem;
         animation-duration: 4s;
         @include media-size (425px){
-            font-size: nth($medidas-font, 6 ) ;
+            font-size: nth($medidas-font, 5 ) ;
         }
     }
-    &__formularioDireciones{
-        display: flex;
-        @include media-size (425px){
-            flex-direction: column;
-            align-items: center;
-        }
+    &__formulario{
+        @include flexbox (column, center, center);
     }
 }
