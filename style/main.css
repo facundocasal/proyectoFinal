@@ -4,7 +4,7 @@
   -moz-box-shadow: 6px 3px 5px 0px #333333;
   box-shadow: 6px 3px 5px 0px #333333; }
 
-.sectionContacto__titulo {
+.cardTratamientos__informacion .link, .sectionContacto__titulo {
   text-shadow: 2px 2px 2px #333333; }
 
 footer div h4, .tituloPaginas, .galeria__titulo, .sectionContacto__titulo {
@@ -224,6 +224,16 @@ footer {
     .cardTratamientos__informacion__titulo {
       text-align: center;
       text-transform: uppercase; }
+    .cardTratamientos__informacion .link {
+      font-size: large;
+      text-decoration: none;
+      font-weight: 600;
+      padding-left: 32px; }
+      .cardTratamientos__informacion .link:hover {
+        color: #fafafa; }
+      @media screen and (max-width: 426px) {
+        .cardTratamientos__informacion .link {
+          margin-bottom: 5px; } }
 
 .Servicios {
   display: flex;
@@ -370,7 +380,7 @@ footer {
         width: 400px;
         height: 100%;
         max-width: 100%;
-        border: 7px solid #fafafa;
+        border: 7px ridge #8b6b61;
         box-sizing: border-box; }
     .modalManicuria:target .cerrar {
       display: block;

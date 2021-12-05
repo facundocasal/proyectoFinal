@@ -30,7 +30,7 @@
                 width: 400px;
                 height: map-get($medidas-porcentaje, total );
                 max-width: map-get($medidas-porcentaje, total );
-                border: 7px solid map-get($colores, blanco );
+                border: 7px ridge map-get($colores, marron );
                 box-sizing: border-box;
             }
         }

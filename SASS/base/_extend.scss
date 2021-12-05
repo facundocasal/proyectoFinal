@@ -1,16 +1,11 @@
 %shadow-box{
-    -webkit-box-shadow: 6px 3px 5px 0px #333333;
-    -moz-box-shadow: 6px 3px 5px 0px #333333;
-    box-shadow: 6px 3px 5px 0px #333333;
+    -webkit-box-shadow: 6px 3px 5px 0px map-get($colores, negro );
+    -moz-box-shadow: 6px 3px 5px 0px map-get($colores, negro );
+    box-shadow: 6px 3px 5px 0px map-get($colores, negro );
 }
+
 %shadow-text{
-    text-shadow: 2px 2px 2px #333333;
-}
-%imagenes-galeria{
-    width: map-get($medidas-porcentaje, total );
-    height: map-get($medidas-porcentaje, total );
-    border-radius: 10px;
-    @extend %shadow-box;
+    text-shadow: 2px 2px 2px map-get($colores, negro );
 }
 
 %titulosDePaginas{

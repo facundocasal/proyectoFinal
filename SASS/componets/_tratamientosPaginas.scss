@@ -18,10 +18,22 @@
             width: 90%;
             margin-top: 5px;
         }
-
         &__titulo{
             text-align: center;
             text-transform: uppercase;
         }
+        .link{
+            font-size: nth($medidas-font, 4 );
+            text-decoration: none;
+            font-weight: 600;
+            padding-left: 32px;
+            @extend %shadow-text;
+            &:hover{
+                color: map-get($colores, blanco );
+            }
+            @include media-size (426px){
+                margin-bottom: 5px;
+            }
+            }
     }
 }
