@@ -20,6 +20,9 @@
         li{
             margin: 5px;
             a{
+                img{
+                    object-fit: cover;
+                }
                 &:hover{
                     cursor: zoom-in;
                 }
